@@ -8,8 +8,7 @@ output: html_document
 
 This script reads a CSV file containing geographic coordinates (X and Y) and elevation data (Z). It visualizes the data using a scatter plot, with the color of the points representing the elevation values. The plot also includes a color bar to indicate the elevation levels.
 
-A little more information on this topic.
-[I'm an inline-style link](https://www.markdownguide.org/extended-syntax/)
+[A little more information on this topic](https://www.markdownguide.org/extended-syntax/)
 
 ## Overview
 
