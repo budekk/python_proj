@@ -14,15 +14,35 @@ Markdown is a lightweight markup language for formatting plain text using simple
 Markdown allows for formatting documents in a simple and readable way. For example, one can start with a main header to give the document a title, and then add a few paragraphs with bold and italicized text for emphasis. Lists can be included, links to websites can be added, and even images can be embedded. If there is a need to share code snippets, Markdown makes this clear, ensuring that they are easy to read and understand.
 The combination of these features allows for the creation of well-organized, structured, and visually appealing documents that can be easily converted to HTML or other formats for use on websites, in reports, or in presentations. 
 
-## Description
-
-This script reads a CSV file containing geographic coordinates (X and Y) and elevation data (Z). It visualizes the data using a scatter plot, with the color of the points representing the elevation values. The plot also includes a color bar to indicate the elevation levels.
-
 ## Overview
 
 The plot below shows the geographic coordinates with the elevation data represented by color.
 
 ![Geographic Plot](./fig1.png)
+
+## Plot 1
+
+To recreate the plot 1, use the Python script provided below:
+
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+
+file_path = r'C:\Users\Python\projekty\python_proj\data.csv'
+
+df = pd.read_csv(file_path)
+
+x = df['X']
+y = df['Y']
+z = df['Z']
+
+plt.figure(figsize=(10, 8))
+plt.scatter(x, y, c=z, cmap='viridis', s=10)
+plt.colorbar(label='Elevation (Z)')
+plt.xlabel('X Coordinate')
+plt.ylabel('Y Coordinate')
+plt.title('Geographic Coordinates and Elevation')
+```
 
 # Scatterplot Analysis
 
@@ -61,6 +81,10 @@ Noticeable clusters of points may suggest data groupings with similar characteri
 ## Statistcis
 
 ![Distribution of Elevation (Z)](./fig2.png)
+
+## Plot 2
+
+To recreate the plot 2, use the Python script provided below:
 
 ```python
 import pandas as pd
@@ -104,28 +128,6 @@ correlation_xy = df[['X', 'Y', 'Z']].corr()
 print("Correlation Matrix:\n", correlation_xy)
 ```
 
-## Plot
 
-To recreate the plot, use the Python script provided below:
-
-```python
-import pandas as pd
-import matplotlib.pyplot as plt
-
-file_path = r'C:\Users\Python\projekty\python_proj\data.csv'
-
-df = pd.read_csv(file_path)
-
-x = df['X']
-y = df['Y']
-z = df['Z']
-
-plt.figure(figsize=(10, 8))
-plt.scatter(x, y, c=z, cmap='viridis', s=10)
-plt.colorbar(label='Elevation (Z)')
-plt.xlabel('X Coordinate')
-plt.ylabel('Y Coordinate')
-plt.title('Geographic Coordinates and Elevation')
-```
 
 
