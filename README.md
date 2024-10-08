@@ -37,3 +37,8 @@ plt.show()  # Display the plot
 
 plt.savefig('fig1.png')
 
+# Geographic Coordinates and Elevation Plot
+
+This project visualizes geographic coordinates and elevation data.
+
+![Geographic Plot](./fig1.png)
