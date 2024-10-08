@@ -50,7 +50,51 @@ Noticeable clusters of points may suggest data groupings with similar characteri
 - **Understanding Terrain**: This analysis could be useful for further research, particularly in applications involving ecology, agriculture, or urbanization.
 - **Z Values as Indicators**: Z values may highlight areas requiring further analysis, such as water resource management or flood protection.
 
-## How to Generate the Plot
+## Statistcis
+
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Path to the CSV file
+file_path = r'C:\Users\Python\projekty\python_proj\data.csv'
+
+# Load the data
+df = pd.read_csv(file_path)
+
+# Extract Z column
+z = df['Z']
+
+mean_z = z.mean()
+median_z = z.median()
+min_z = z.min()
+max_z = z.max()
+std_z = z.std()
+percentiles = z.quantile([0.25, 0.5, 0.75])
+
+print("Mean:", mean_z)
+print("Median:", median_z)
+print("Min:", min_z)
+print("Max:", max_z)
+print("Standard Deviation:", std_z)
+print("Percentiles (25%, 50%, 75%):", percentiles.values)
+
+plt.figure(figsize=(10, 6))
+sns.histplot(z, bins=30, kde=True)
+plt.title('Distribution of Elevation (Z)')
+plt.xlabel('Elevation (Z)')
+plt.ylabel('Frequency')
+plt.show()
+
+range_z = max_z - min_z
+print("Range of Elevation (Z):", range_z)
+
+correlation_xy = df[['X', 'Y', 'Z']].corr()
+print("Correlation Matrix:\n", correlation_xy)
+```
+
+## Plot
 
 To recreate the plot, use the Python script provided below:
 
@@ -72,5 +116,6 @@ plt.colorbar(label='Elevation (Z)')
 plt.xlabel('X Coordinate')
 plt.ylabel('Y Coordinate')
 plt.title('Geographic Coordinates and Elevation')
+```
 
 
