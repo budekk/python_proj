@@ -55,6 +55,8 @@ Noticeable clusters of points may suggest data groupings with similar characteri
 
 ## Statistcis
 
+![Distribution of Elevation (Z)](./fig2.png)
+
 ```python
 import pandas as pd
 import matplotlib.pyplot as plt
