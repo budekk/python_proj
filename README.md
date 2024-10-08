@@ -108,13 +108,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Path to the CSV file
 file_path = r'C:\Users\Python\projekty\python_proj\data.csv'
 
-# Load the data
 df = pd.read_csv(file_path)
 
-# Extract Z column
 z = df['Z']
 
 mean_z = z.mean()
