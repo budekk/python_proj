@@ -9,6 +9,11 @@ Markdown is a lightweight markup language for formatting plain text using simple
 
 [A little more information about Markdown.](https://www.markdownguide.org/extended-syntax/)
 
+## Markdown Syntax
+
+Markdown allows for formatting documents in a simple and readable way. For example, one can start with a main header to give the document a title, and then add a few paragraphs with bold and italicized text for emphasis. Lists can be included, links to websites can be added, and even images can be embedded. If there is a need to share code snippets, Markdown makes this clear, ensuring that they are easy to read and understand.
+The combination of these features allows for the creation of well-organized, structured, and visually appealing documents that can be easily converted to HTML or other formats for use on websites, in reports, or in presentations. 
+
 ## Description
 
 This script reads a CSV file containing geographic coordinates (X and Y) and elevation data (Z). It visualizes the data using a scatter plot, with the color of the points representing the elevation values. The plot also includes a color bar to indicate the elevation levels.
