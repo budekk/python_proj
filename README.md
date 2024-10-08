@@ -90,7 +90,6 @@ Noticeable clusters of points may suggest data groupings with similar characteri
 - **Maximum Elevation (Z)**: 258.24
 - **Standard Deviation (Z)**: 5.14
 - **Range of Elevation (Z)**: 36.10
-- **Number of Outliers Detected**: 1681
 
 ### Correlation Matrix
 
