@@ -78,9 +78,27 @@ Noticeable clusters of points may suggest data groupings with similar characteri
 - **Understanding Terrain**: This analysis could be useful for further research, particularly in applications involving ecology, agriculture, or urbanization.
 - **Z Values as Indicators**: Z values may highlight areas requiring further analysis, such as water resource management or flood protection.
 
-## Statistcis
-
 ![Distribution of Elevation (Z)](./fig2.png)
+
+## Statistics
+
+## Descriptive Statistics of Elevation (Z)
+
+- **Mean Elevation (Z)**: 237.48
+- **Median Elevation (Z)**: 236.91
+- **Minimum Elevation (Z)**: 222.14
+- **Maximum Elevation (Z)**: 258.24
+- **Standard Deviation (Z)**: 5.14
+- **Range of Elevation (Z)**: 36.10
+- **Number of Outliers Detected**: 1681
+
+### Correlation Matrix
+
+|     |     X     |     Y     |     Z     |
+|-----|-----------|-----------|-----------|
+|  X  |  1.000    | -0.010    | -0.030    |
+|  Y  | -0.010    |  1.000    |  0.311    |
+|  Z  | -0.030    |  0.311    |  1.000    |
 
 ## Plot 2
 
