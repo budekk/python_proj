@@ -34,3 +34,6 @@ plt.xlabel('X Coordinate')           # Label for the X-axis
 plt.ylabel('Y Coordinate')           # Label for the Y-axis
 plt.title('Geographic Coordinates and Elevation')  # Title of the plot
 plt.show()  # Display the plot
+
+plt.savefig('geographic_plot.png')
+
