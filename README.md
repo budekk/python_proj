@@ -6,7 +6,7 @@ This project visualizes geographic coordinates (X, Y) and elevation (Z) data usi
 
 The plot below shows the geographic coordinates with the elevation data represented by color.
 
-![Geographic Plot](./geographic_plot.png)
+![Geographic Plot](./fig1.png)
 
 ## How to Generate the Plot
 
