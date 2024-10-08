@@ -1,7 +1,6 @@
 ---
 title: "Geographic Coordinates and Elevation Visualization"
-author: "Your Name"
-date: "`r Sys.Date()`"
+date: "08.10.2024"
 output: html_document
 ---
 
