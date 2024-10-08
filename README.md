@@ -7,11 +7,11 @@ output: html_document
 
 Markdown is a lightweight markup language for formatting plain text using simple syntax, allowing easy conversion to HTML or other rich text formats. It's commonly used for documentation, web content, and writing readable text files like README files on platforms such as GitHub.
 
+[A little more information about Markdown.](https://www.markdownguide.org/extended-syntax/)
+
 ## Description
 
 This script reads a CSV file containing geographic coordinates (X and Y) and elevation data (Z). It visualizes the data using a scatter plot, with the color of the points representing the elevation values. The plot also includes a color bar to indicate the elevation levels.
-
-[A little more information about Markdown.](https://www.markdownguide.org/extended-syntax/)
 
 ## Overview
 
