@@ -3,6 +3,9 @@ title: "Geographic Coordinates and Elevation Visualization"
 date: "08.10.2024"
 output: html_document
 ---
+## Authors
+Aleksandra Barnach, Gabriela Bebak, Bartosz Budek, Wiktoria Gądek, Maciek Grzybacz
+
 ## Markdown 
 
 Markdown is a lightweight markup language for formatting plain text using simple syntax, allowing easy conversion to HTML or other rich text formats. It's commonly used for documentation, web content, and writing readable text files like README files on platforms such as GitHub.
